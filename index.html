@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomúlario Galático</title>
+    <link rel="stylesheet" type="text/css"  href="Formulario  style.css"> 
+
+
+
+</head>
+
+<body>
+    <div class="campo">
+        <h1 id="título">Cadatro Para Viagem Galática</h1>    
+        <p id="subtítulo">Preencha a solicitação de transfência galática.</p>
+        <br>
+    </div>
+    
+    <Form>
+        <fieldset class="infobase">
+            <div class="campo">
+                <label for="Nome"> Nome</label>
+                <input type="text" name="Nome" id="Nome" required>    
+            </div>
+
+            <div class="campo">
+                <label for="Sobrenome">Sobrenome</label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
+            </div>
+
+            <div class="campo">
+                <label for="Email">Email</label>
+                <input type="email" nome="email" id="email" required>
+            </div>    
+            <div class="campo">
+                <label>Telefone</label>
+                <input type="text" name="Telefone" id="Telefone" required>
+            </div>
+                
+            <div class="campo">
+                <label>Endereço</label>
+                <input type="text" name="Endereço" id="Endereço" required>     
+            </div>
+
+            <div class="campo">
+                <label>Numero do Passe-Espacial "NPE" </label>
+                <input type="text" name="NPE" id="NPE" required> 
+            </div>
+
+            <div class="campo" >
+                <label> Selecione a sua espécie:</label><br>
+                <label><input type="radio" nome="Arcturiano" value="Arcturiano"> Arcturiano</label>
+                <label><input type="radio" nome="Chagriano" value="Chagriano"> Chagriano</label>
+                <label><input type="radio" nome="Thanagarianos" value="Thanagarianos"> Thanagariano</label>
+                <label><input type="radio" nome="Terráqueo" value="Terráqueo"> Terráqueo</label>
+                <label><input type="radio" nome="Grays" value="Grays"> Grays</label>
+                <label><input type="radio" nome="Híbrido" value="Híbrido"> Híbrido</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="Objetiva">
+            <div class="campo">
+                <label>Já fez alguma viagem espacial?</label>
+                <select id="Selecione">
+                    <option selected disabled value=""> Selecione</option>
+                    <option>Sim</option>
+                    <option>Não</option>
+                </select>
+            </div>
+        </fieldset>
+       
+        <fieldset class="viagem">
+            <div class="campo">
+                <label>Qual o tipo de viagem que deseja realizar?</label>
+                <p class="Obs">Se for com conexões, selecione mais de uma opção.</p>
+                <input type="checkbox" id="Planetária" name="Planetária" value="Viagem">
+                <label for="Planetária">Planetária</label>
+                <input type="checkbox" id="Interestelar" name="Interestelar" value="Viagem">
+                <label for="Interestelar">Interestelar</label>
+                <input type="checkbox" id="Intergaláctica" name="Intergaláctica" value="Viagem">
+                <label for="Intergaláctica">Intergaláctica</label>
+            </div>
+            
+                <div class="campo">
+                    <br>
+                    <label class="descricao">Informe aqui a origem e destino</label>
+                    <textarea placeholder="Digite aqui..." rows="6" style="width: 26em;" name="origem_e_destino" id="origem-e-destino"></textarea>
+                </div>
+            
+            <button class="botao"  type="submit"> Concluído</button>
+            
+</body>
+</html>
